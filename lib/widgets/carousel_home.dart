@@ -1,21 +1,31 @@
 // ignore_for_file: avoid_unnecessary_containers
 
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:fl_blibli/main.dart';
 import 'package:fl_blibli/theme/theme.dart';
 import 'package:flutter/material.dart';
 
-class CarouselHome extends StatelessWidget {
+final List<String> imgList = [
+  'assets/images/mastercard-30okt-desktop.jpeg',
+  'assets/images/chromebook-30okt-destop.jpeg',
+  'assets/images/IS-sepeda-30okt-desktop.jpeg',
+  'assets/images/IS-sepeda-30okt-desktop.jpeg',
+  'assets/images/IS-sepeda-30okt-desktop.jpeg',
+  'assets/images/IS-sepeda-30okt-desktop.jpeg',
+];
+
+class CarouselHome extends StatefulWidget {
   const CarouselHome({
     Key? key,
-    required this.controller,
-    required this.onPageChanged,
-    required this.current,
   }) : super(key: key);
 
-  final CarouselController controller;
-  final int current;
-  final Function(int) onPageChanged;
+  @override
+  State<CarouselHome> createState() => _CarouselHomeState();
+}
+
+class _CarouselHomeState extends State<CarouselHome> {
+  int _current = 0;
+
+  final CarouselController _controller = CarouselController();
 
   @override
   Widget build(BuildContext context) {
@@ -23,16 +33,15 @@ class CarouselHome extends StatelessWidget {
       child: Column(
         children: [
           CarouselSlider(
-            carouselController: controller,
+            carouselController: _controller,
             options: CarouselOptions(
                 autoPlay: false,
                 height: 140,
                 viewportFraction: 0.9,
                 onPageChanged: (index, reason) {
-                  onPageChanged(index);
-                  // setState(() {
-                  //   _current = index;
-                  // });
+                  setState(() {
+                    _current = index;
+                  });
                 }),
             items: [
               ...imgList.map(
@@ -65,14 +74,14 @@ class CarouselHome extends StatelessWidget {
                   children: imgList.asMap().entries.map(
                     (entry) {
                       return GestureDetector(
-                        onTap: () => controller.animateToPage(entry.key),
+                        onTap: () => _controller.animateToPage(entry.key),
                         child: AnimatedContainer(
                           duration: const Duration(milliseconds: 200),
-                          width: current == entry.key ? 18 : 8,
+                          width: _current == entry.key ? 18 : 8,
                           height: 8,
                           margin: const EdgeInsets.only(right: 8),
                           decoration: BoxDecoration(
-                            color: current == entry.key
+                            color: _current == entry.key
                                 ? primary
                                 : placeHolderColor,
                             borderRadius: BorderRadius.circular(12),
