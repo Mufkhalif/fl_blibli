@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
       home: HomePage(),
     );
   }
@@ -30,15 +29,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  Widget currentScreen = HomeScreen();
-  int _selectedIndex = 0;
-  int currentIndex = 0;
-
-  setBottomBarIndex(index) {
-    setState(() {
-      currentIndex = index;
-    });
-  }
+  Widget currentScreen = CategoryScreen();
+  int _selectedIndex = 1;
 
   void _onItemTapped(int index) {
     setState(() {

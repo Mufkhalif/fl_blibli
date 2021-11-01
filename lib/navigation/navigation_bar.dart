@@ -34,7 +34,9 @@ class NavigationBar extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 NavItem(
-                  asset: 'assets/images/ic_home.svg',
+                  asset: current == 0
+                      ? 'assets/images/ic_home_active.svg'
+                      : 'assets/images/ic_home.svg',
                   title: 'Beranda',
                   isActive: current == 0,
                   onTap: () {
@@ -42,7 +44,9 @@ class NavigationBar extends StatelessWidget {
                   },
                 ),
                 NavItem(
-                  asset: 'assets/images/ic_kategori.svg',
+                  asset: current == 1
+                      ? 'assets/images/ic_kategori_active.svg'
+                      : 'assets/images/ic_kategori.svg',
                   title: 'Kategori',
                   isActive: current == 1,
                   onTap: () {
@@ -53,7 +57,9 @@ class NavigationBar extends StatelessWidget {
                   width: size.width * 0.20,
                 ),
                 NavItem(
-                  asset: 'assets/images/ic_official.svg',
+                  asset: current == 2
+                      ? 'assets/images/ic_official_active.svg'
+                      : 'assets/images/ic_official.svg',
                   title: 'Official',
                   isActive: current == 2,
                   onTap: () {
@@ -61,7 +67,9 @@ class NavigationBar extends StatelessWidget {
                   },
                 ),
                 NavItem(
-                  asset: 'assets/images/ic_account.svg',
+                  asset: current == 3
+                      ? 'assets/images/ic_account_active.svg'
+                      : 'assets/images/ic_account.svg',
                   title: 'Akun',
                   isActive: current == 3,
                   onTap: () {
