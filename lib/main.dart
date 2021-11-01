@@ -1,6 +1,7 @@
-// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, unnecessary_const, import_of_legacy_library_into_null_safe, avoid_print, non_constant_identifier_names
+import 'package:fl_blibli/screens/account_screen.dart';
 import 'package:fl_blibli/screens/category_screen.dart';
 import 'package:fl_blibli/screens/home_screen.dart';
+import 'package:fl_blibli/screens/offical_screen.dart';
 import 'package:fl_blibli/widgets/icons/icon_orange_center.dart';
 import 'package:flutter/material.dart';
 import 'navigation/navigation_bar.dart';
@@ -14,8 +15,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
+    return const MaterialApp(
+      // debugShowCheckedModeBanner: false,
       home: HomePage(),
     );
   }
@@ -29,8 +30,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  Widget currentScreen = CategoryScreen();
-  int _selectedIndex = 1;
+  Widget currentScreen = const HomeScreen();
+  int _selectedIndex = 0;
 
   void _onItemTapped(int index) {
     setState(() {
@@ -40,22 +41,22 @@ class _HomePageState extends State<HomePage> {
     switch (index) {
       case 0:
         {
-          currentScreen = HomeScreen();
+          currentScreen = const HomeScreen();
           break;
         }
       case 1:
         {
-          currentScreen = CategoryScreen();
+          currentScreen = const CategoryScreen();
           break;
         }
       case 2:
         {
-          currentScreen = CategoryScreen();
+          currentScreen = const OfficalScreen();
           break;
         }
       case 3:
         {
-          currentScreen = CategoryScreen();
+          currentScreen = const AccountScreen();
           break;
         }
     }
@@ -65,14 +66,12 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
-      body: Container(
-        child: Stack(
-          children: [
-            currentScreen,
-            OrangeIconCenter(size: size),
-            NavigationBar(onItemTapped: _onItemTapped, current: _selectedIndex)
-          ],
-        ),
+      body: Stack(
+        children: [
+          currentScreen,
+          OrangeIconCenter(size: size),
+          NavigationBar(onItemTapped: _onItemTapped, current: _selectedIndex)
+        ],
       ),
     );
   }

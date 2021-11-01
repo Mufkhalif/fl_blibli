@@ -1,5 +1,6 @@
 import 'package:fl_blibli/theme/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 class HeaderHome extends StatelessWidget {
   const HeaderHome({
@@ -96,16 +97,37 @@ class HeaderHome extends StatelessWidget {
                           borderRadius: BorderRadius.circular(12),
                         ),
                         padding: const EdgeInsets.only(left: 12),
-                        child: const Align(
-                          alignment: Alignment.centerLeft,
-                          child: Text(
-                            'RTX 3070',
-                            style: TextStyle(
-                              fontFamily: "Effra",
-                              fontWeight: FontWeight.w600,
+                        child: Align(
+                            alignment: Alignment.centerLeft,
+                            child: Text(
+                              'RTX 3070',
+                              style: TextStyle(
+                                fontFamily: "Effra",
+                                fontWeight: FontWeight.w600,
+                              ),
+                            )
+                            // AnimatedTextKit(
+                            //   repeatForever: true,
+                            //   animatedTexts: [
+                            //     FadeAnimatedText(
+                            //       'Popok bayi',
+                            //       textStyle: const TextStyle(
+                            //         fontFamily: "Effra",
+                            //         fontWeight: FontWeight.w600,
+                            //         color: Colors.black,
+                            //       ),
+                            //     ),
+                            //     FadeAnimatedText(
+                            //       'Iphone 13 pro',
+                            //       textStyle: const TextStyle(
+                            //         fontFamily: "Effra",
+                            //         fontWeight: FontWeight.w600,
+                            //         color: Colors.black,
+                            //       ),
+                            //     ),
+                            //   ],
+                            // ),
                             ),
-                          ),
-                        ),
                       ),
                     ),
                     Row(

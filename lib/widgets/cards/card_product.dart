@@ -18,7 +18,7 @@ class CardProduct extends StatelessWidget {
   final String price;
   final String beforePrice;
   final String discount;
-  final String terjual;
+  final int terjual;
   final bool showStock;
 
   @override
@@ -111,12 +111,13 @@ class CardProduct extends StatelessWidget {
                         borderRadius: BorderRadius.circular(32),
                       ),
                       child: Text(
-                        discount,
+                        discount.toString(),
                         style: TextStyle(
-                            fontFamily: "Effra",
-                            fontWeight: FontWeight.w600,
-                            color: redColor,
-                            fontSize: 12),
+                          fontFamily: "Effra",
+                          fontWeight: FontWeight.w600,
+                          color: redColor,
+                          fontSize: 12,
+                        ),
                       ),
                     ),
                   ],
@@ -138,7 +139,7 @@ class CardProduct extends StatelessWidget {
                                 vertical: 4,
                               ),
                               decoration: BoxDecoration(
-                                color: Color(0xffF7B161).withOpacity(0.5),
+                                color: const Color(0xffF7B161).withOpacity(0.5),
                                 borderRadius: BorderRadius.circular(
                                   32,
                                 ),
@@ -146,7 +147,7 @@ class CardProduct extends StatelessWidget {
                             ),
                             Container(
                               height: 22,
-                              width: 100,
+                              width: 140 * terjual / 100,
                               padding: const EdgeInsets.symmetric(
                                 horizontal: 8,
                                 vertical: 4,
@@ -178,7 +179,7 @@ class CardProduct extends StatelessWidget {
                                         width: 12,
                                       ),
                                       Text(
-                                        terjual,
+                                        terjual.toString() + " % terjual",
                                         style: const TextStyle(
                                           fontFamily: "Effra",
                                           fontWeight: FontWeight.w600,

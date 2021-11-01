@@ -79,7 +79,7 @@ class PromoSection extends StatelessWidget {
                       beforePrice: 'Rp5.899.000',
                       price: 'Rp5.699.000',
                       discount: '3%',
-                      terjual: '30% Terjual',
+                      terjual: 20,
                       showStock: false,
                     ),
                     CardProduct(
@@ -90,7 +90,7 @@ class PromoSection extends StatelessWidget {
                       beforePrice: 'Rp5.899.000',
                       price: 'Rp5.699.000',
                       discount: '3%',
-                      terjual: '30% Terjual',
+                      terjual: 20,
                       showStock: false,
                     ),
                   ],

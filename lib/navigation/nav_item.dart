@@ -22,11 +22,11 @@ class NavItem extends StatelessWidget {
       onTap: onTap,
       child: AnimatedContainer(
         padding: const EdgeInsets.only(top: 4),
-        duration: Duration(milliseconds: 400),
+        duration: const Duration(milliseconds: 400),
         child: Column(
           children: [
             SvgPicture.asset(asset),
-            SizedBox(height: 2),
+            const SizedBox(height: 2),
             Text(
               title,
               textAlign: TextAlign.center,

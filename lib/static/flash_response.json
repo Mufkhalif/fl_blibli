@@ -1,0 +1,1046 @@
+{
+  "code": 200,
+  "status": "OK",
+  "data": {
+    "id": "FLASHSALE",
+    "sequence": 7,
+    "components": [
+      {
+        "name": "BACKGROUND",
+        "showInTnc": false,
+        "parameters": [
+          {
+            "id": "8ab0bf987a303b5c017a50c482a55ccf",
+            "image": "https://www.static-src.com/siva/asset//06_2021/fs-mobapp-background-jul.jpg",
+            "imageRatio": "15:13",
+            "name": "IMAGE",
+            "newTab": false,
+            "type": "IMAGE"
+          }
+        ],
+        "componentLayoutId": "8ab09e02768afd8601768baa4dbf04df"
+      },
+      {
+        "name": "HOMEPAGE_2018_NOV_FLASHSALE",
+        "showInTnc": false,
+        "parameters": [
+          {
+            "id": "8ab016057cbd623c017ccac21e08041c",
+            "name": "flashSaleProductSet",
+            "products": [
+              {
+                "name": "Samsung Galaxy A22 LTE Smartphone [6 GB/ 128 GB]",
+                "sku": "INL-60035-00873",
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//98/MTA-20659552/samsung_samsung_galaxy_a22_lte_smartphone_-6_gb-_128_gb-_full47_j21l1wqj.jpg",
+                "price": {
+                  "list": "Rp 2,999,000",
+                  "listValue": 2999000,
+                  "offer": "Rp 2,769,000 - Rp 2,799,000",
+                  "offerValue": 2769000,
+                  "min": 2769000,
+                  "max": 2799000,
+                  "discount": 7
+                },
+                "buyable": {
+                  "value": true
+                },
+                "discoverable": {
+                  "value": true
+                },
+                "url": "https://www.blibli.com/p/samsung-galaxy-a22-lte-smartphone-6-gb-128-gb/ps--INL-60035-00873",
+                "itemSkus": [
+                  "INL-60035-00873-00003",
+                  "INL-60035-00873-00001",
+                  "INL-60035-00873-00004",
+                  "INL-60035-00873-00002"
+                ],
+                "merchantCode": "INL-60035",
+                "inventory": {
+                  "status": "AVAILABLE",
+                  "percentage": 75
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 4.9,
+                  "count": 127
+                },
+                "tags": ["2HD"]
+              },
+              {
+                "name": "Samsung AR05TGHQASINSE Wall Mount AC Split [0.5 PK]",
+                "sku": "BLA-60054-01027",
+                "sequence": 1,
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium/MTA-6793875/samsung_samsung_ar05tghqasinse_wall_mount_ac_split_-0-5_pk-_full01_coh83j5f.jpeg",
+                "price": {
+                  "list": "Rp 3,598,700",
+                  "listValue": 3598700,
+                  "offer": "Rp 2,699,000",
+                  "offerValue": 2699000,
+                  "min": 2699000,
+                  "max": 2699000,
+                  "discount": 25
+                },
+                "buyable": {
+                  "value": true,
+                  "startDateTime": 1588930485020,
+                  "endDateTime": 1588930487676
+                },
+                "discoverable": {
+                  "value": true,
+                  "startDateTime": 1588930479364,
+                  "endDateTime": 1588930482702
+                },
+                "url": "https://www.blibli.com/p/samsung-ar05tghqasinse-wall-mount-ac-split-0-5-pk/ps--BLA-60054-01027",
+                "itemSkus": ["BLA-60054-01027-00001"],
+                "merchantCode": "BLA-60054",
+                "campaign": {
+                  "active": true,
+                  "campaignCode": "CAMP-00783",
+                  "campaignName": "Flash Sale (1 - 10 November 2021)",
+                  "promotionEndTime": 1635785999000,
+                  "promotionStartTime": 1635699600000,
+                  "tagLabel": "https://www.static-src.com/siva/asset//07_2021/fs-logo-2021.png"
+                },
+                "inventory": {
+                  "status": "AVAILABLE",
+                  "percentage": 100
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 4.8,
+                  "count": 302
+                },
+                "tags": ["2HD"]
+              },
+              {
+                "name": "Infinix Hot 10 S Smartphone [6 GB/ 128 GB/D]",
+                "sku": "CES-60092-00044",
+                "sequence": 2,
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//108/MTA-18983690/infinix_infinix_hot_10_s_smartphone_-6_gb-_128_gb-d-_full01_nkshvg0l.jpg",
+                "price": {
+                  "list": "Rp 2,149,000",
+                  "listValue": 2149000,
+                  "offer": "Rp 1,999,000 - Rp 2,149,000",
+                  "offerValue": 1999000,
+                  "min": 1999000,
+                  "max": 2149000,
+                  "discount": 6
+                },
+                "buyable": {
+                  "value": true
+                },
+                "discoverable": {
+                  "value": true
+                },
+                "url": "https://www.blibli.com/p/infinix-hot-10-s-smartphone-6-gb-128-gb-d/ps--CES-60092-00044",
+                "itemSkus": [
+                  "CES-60092-00044-00001",
+                  "CES-60092-00044-00003",
+                  "CES-60092-00044-00002"
+                ],
+                "merchantCode": "CES-60092",
+                "campaign": {
+                  "active": true,
+                  "campaignCode": "CAMP-00783",
+                  "campaignName": "Flash Sale (1 - 10 November 2021)",
+                  "promotionEndTime": 1635785999000,
+                  "promotionStartTime": 1635699600000,
+                  "tagLabel": "https://www.static-src.com/siva/asset//07_2021/fs-logo-2021.png"
+                },
+                "inventory": {
+                  "status": "AVAILABLE",
+                  "percentage": 97
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 4.9,
+                  "count": 120
+                },
+                "tags": ["2HD"]
+              },
+              {
+                "name": "Samsung WA70H4200SW/SE Top Loading Mesin Cuci [7 Kg]",
+                "sku": "BLA-60054-00101",
+                "sequence": 3,
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium/MTA-3587712/samsung_samsung_wa70h4200sw-se_top_loading_mesin_cuci_-7_kg-_full10_r6nis2yv.jpeg",
+                "price": {
+                  "list": "Rp 2,799,000",
+                  "listValue": 2799000,
+                  "offer": "Rp 2,299,000",
+                  "offerValue": 2299000,
+                  "min": 2299000,
+                  "max": 2299000,
+                  "discount": 17
+                },
+                "buyable": {
+                  "value": true,
+                  "startDateTime": 1588931328975,
+                  "endDateTime": 1588931330973
+                },
+                "discoverable": {
+                  "value": true,
+                  "startDateTime": 1588931324518,
+                  "endDateTime": 1588931326900
+                },
+                "url": "https://www.blibli.com/p/samsung-wa70h4200sw-se-top-loading-mesin-cuci-7-kg/ps--BLA-60054-00101",
+                "itemSkus": ["BLA-60054-00101-00001"],
+                "merchantCode": "BLA-60054",
+                "campaign": {
+                  "active": true,
+                  "campaignCode": "CAMP-00783",
+                  "campaignName": "Flash Sale (1 - 10 November 2021)",
+                  "promotionEndTime": 1635785999000,
+                  "promotionStartTime": 1635699600000,
+                  "tagLabel": "https://www.static-src.com/siva/asset//07_2021/fs-logo-2021.png"
+                },
+                "inventory": {
+                  "status": "AVAILABLE",
+                  "percentage": 99
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 4.8,
+                  "count": 271
+                },
+                "tags": ["2HD"]
+              },
+              {
+                "name": "Nescafe Dolce Gusto Piccolo XS - Hitam Free 3 Box Cappucino",
+                "sku": "BLA-60054-01842",
+                "sequence": 4,
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//97/MTA-11697810/nescafe_dolce_gusto_-internal-_-_nescafe_dolce_gusto_piccolo_xs_-_hitam_free_3_box_cappucino_full01_cxdkltks.jpg",
+                "price": {
+                  "list": "Rp 1,638,800",
+                  "listValue": 1638800,
+                  "offer": "Rp 799,000",
+                  "offerValue": 799000,
+                  "min": 799000,
+                  "max": 799000,
+                  "discount": 51
+                },
+                "buyable": {
+                  "value": true,
+                  "startDateTime": 1615136400000,
+                  "endDateTime": 1617209940000
+                },
+                "discoverable": {
+                  "value": true,
+                  "startDateTime": 1614790800000,
+                  "endDateTime": 1617209940000
+                },
+                "url": "https://www.blibli.com/p/nescafe-dolce-gusto-piccolo-xs-hitam-free-3-box-cappucino/ps--BLA-60054-01842",
+                "itemSkus": ["BLA-60054-01842-00001"],
+                "merchantCode": "BLA-60054",
+                "campaign": {
+                  "active": true,
+                  "campaignCode": "CAMP-00783",
+                  "campaignName": "Flash Sale (1 - 10 November 2021)",
+                  "promotionEndTime": 1635785999000,
+                  "promotionStartTime": 1635699600000,
+                  "tagLabel": "https://www.static-src.com/siva/asset//07_2021/fs-logo-2021.png"
+                },
+                "inventory": {
+                  "status": "AVAILABLE",
+                  "percentage": 99
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 4.8,
+                  "count": 110
+                },
+                "tags": ["2HD"]
+              },
+              {
+                "name": "WINGSCARE Protector Masker 3ply 50s\n\n",
+                "sku": "WIK-60037-00001",
+                "sequence": 5,
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium/MTA-7931563/wingscare_wingscare_mask_protector_-50_pcs-_full01_igo8z0d7.png",
+                "price": {
+                  "list": "Rp 80,000",
+                  "listValue": 80000,
+                  "offer": "Rp 39,000",
+                  "offerValue": 39000,
+                  "min": 39000,
+                  "max": 39000,
+                  "discount": 51
+                },
+                "buyable": {
+                  "value": true,
+                  "startDateTime": 1635181200000,
+                  "endDateTime": 1635267540000
+                },
+                "discoverable": {
+                  "value": true,
+                  "startDateTime": 1635181200000,
+                  "endDateTime": 1635267540000
+                },
+                "url": "https://www.blibli.com/p/wingscare-protector-masker-3ply-50s/ps--WIK-60037-00001",
+                "itemSkus": ["WIK-60037-00001-00001"],
+                "merchantCode": "WIK-60037",
+                "campaign": {
+                  "active": true,
+                  "campaignCode": "CAMP-00783",
+                  "campaignName": "Flash Sale (1 - 10 November 2021)",
+                  "promotionEndTime": 1635785999000,
+                  "promotionStartTime": 1635699600000,
+                  "tagLabel": "https://www.static-src.com/siva/asset//07_2021/fs-logo-2021.png"
+                },
+                "inventory": {
+                  "status": "AVAILABLE",
+                  "percentage": 93
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 4.8,
+                  "count": 662
+                },
+                "tags": ["2HD"]
+              },
+              {
+                "name": "realme 8 Pro Smartphone [8GB/128GB]",
+                "sku": "SIA-60028-01272",
+                "sequence": 6,
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//101/MTA-13782395/realme_realme_8_pro_smartphone_-8gb-128gb-_full01_5d6xdrw.jpg",
+                "price": {
+                  "list": "Rp 3,655,000",
+                  "listValue": 3655000,
+                  "offer": "Rp 3,654,800 - Rp 3,655,000",
+                  "offerValue": 3654800,
+                  "min": 3654800,
+                  "max": 3655000
+                },
+                "buyable": {
+                  "value": true
+                },
+                "discoverable": {
+                  "value": true
+                },
+                "url": "https://www.blibli.com/p/realme-8-pro-smartphone-8gb-128gb/ps--SIA-60028-01272",
+                "itemSkus": [
+                  "SIA-60028-01272-00001",
+                  "SIA-60028-01272-00002",
+                  "SIA-60028-01272-00003"
+                ],
+                "merchantCode": "SIA-60028",
+                "campaign": {
+                  "active": true,
+                  "campaignCode": "CAMP-00783",
+                  "campaignName": "Flash Sale (1 - 10 November 2021)",
+                  "promotionEndTime": 1635785999000,
+                  "promotionStartTime": 1635699600000,
+                  "tagLabel": "https://www.static-src.com/siva/asset//07_2021/fs-logo-2021.png"
+                },
+                "inventory": {
+                  "status": "AVAILABLE",
+                  "percentage": 98
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 4.8,
+                  "count": 12
+                },
+                "tags": ["2HD"]
+              },
+              {
+                "name": "VIVO Y20 2021 4/64 GB",
+                "sku": "GAS-70137-00048",
+                "sequence": 7,
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//103/MTA-19838182/vivo_vivo_y20_2021_smartphone_-4gb_-_64gb_-_slim_5000mah_battery_-_ultra_fast_side_fingerprint-_full01_d947vvy.jpg",
+                "price": {
+                  "offer": "Rp 0"
+                },
+                "buyable": {
+                  "value": false
+                },
+                "discoverable": {
+                  "value": false
+                },
+                "url": "https://www.blibli.com/p/vivo-y20-2021-4-64-gb/ps--GAS-70137-00048",
+                "itemSkus": [""],
+                "merchantCode": "GAS-70137",
+                "inventory": {
+                  "status": "OUT_OF_STOCK",
+                  "percentage": 0
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 4.8,
+                  "count": 37
+                },
+                "tags": ["2HD"]
+              },
+              {
+                "name": "SHARP KZ-2S02-BK Toaster",
+                "sku": "BLO-60051-00016",
+                "sequence": 8,
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//93/MTA-9763003/sharp_sharp_kz-2s02-bk_toaster_full02_d4lxsz6t.jpg",
+                "price": {
+                  "list": "Rp 550,000",
+                  "listValue": 550000,
+                  "offer": "Rp 201,925",
+                  "offerValue": 201925,
+                  "min": 201925,
+                  "max": 201925,
+                  "discount": 63
+                },
+                "buyable": {
+                  "value": false
+                },
+                "discoverable": {
+                  "value": false
+                },
+                "url": "https://www.blibli.com/p/sharp-kz-2s02-bk-toaster/ps--BLO-60051-00016",
+                "itemSkus": ["BLO-60051-00016-00001"],
+                "merchantCode": "BLO-60051",
+                "campaign": {
+                  "active": true,
+                  "campaignCode": "CAMP-00783",
+                  "campaignName": "Flash Sale (1 - 10 November 2021)",
+                  "promotionEndTime": 1635785999000,
+                  "promotionStartTime": 1635699600000,
+                  "tagLabel": "https://www.static-src.com/siva/asset//07_2021/fs-logo-2021.png"
+                },
+                "inventory": {
+                  "status": "AVAILABLE",
+                  "percentage": 100
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 4.8,
+                  "count": 23
+                },
+                "tags": ["2HD", "BLIBLI_SHIPPING"]
+              },
+              {
+                "name": "Winix Zero Compact Air Purifier / Pembersih Udara",
+                "sku": "OFW-70000-00007",
+                "sequence": 9,
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//92/MTA-11663156/winix_winix_zero_compact_aapu600-jle_air_purifier_-_pembersih_udara_full01_jgwmxo3h.jpg",
+                "price": {
+                  "list": "Rp 2,799,000",
+                  "listValue": 2799000,
+                  "offer": "Rp 1,999,000",
+                  "offerValue": 1999000,
+                  "min": 1999000,
+                  "max": 1999000,
+                  "discount": 28
+                },
+                "buyable": {
+                  "value": true
+                },
+                "discoverable": {
+                  "value": true
+                },
+                "url": "https://www.blibli.com/p/winix-zero-compact-air-purifier-pembersih-udara/ps--OFW-70000-00007",
+                "itemSkus": ["OFW-70000-00007-00001"],
+                "merchantCode": "OFW-70000",
+                "campaign": {
+                  "active": true,
+                  "campaignCode": "CAMP-00783",
+                  "campaignName": "Flash Sale (1 - 10 November 2021)",
+                  "promotionEndTime": 1635785999000,
+                  "promotionStartTime": 1635699600000,
+                  "tagLabel": "https://www.static-src.com/siva/asset//07_2021/fs-logo-2021.png"
+                },
+                "inventory": {
+                  "status": "AVAILABLE",
+                  "percentage": 100
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 4.8,
+                  "count": 35
+                },
+                "tags": ["2HD"]
+              },
+              {
+                "name": "BRANDS Essence Birds Nest with Rock Sugar [70 Gr/ 6 Pcs]",
+                "sku": "BRE-22173-00040",
+                "sequence": 10,
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium/GDN-0009446/brand-s_essence_brands_essence_birds_nest_with_rock_sugar_-70_gr-_6_pcs-_full03_plgk0nsp.jpg",
+                "price": {
+                  "list": "Rp 572,500",
+                  "listValue": 572500,
+                  "offer": "Rp 411,011",
+                  "offerValue": 411011,
+                  "min": 411011,
+                  "max": 411011,
+                  "discount": 28
+                },
+                "buyable": {
+                  "value": true,
+                  "startDateTime": 1624554000000,
+                  "endDateTime": 1624640340000
+                },
+                "discoverable": {
+                  "value": true,
+                  "startDateTime": 1624554000000,
+                  "endDateTime": 1624640340000
+                },
+                "url": "https://www.blibli.com/p/brands-essence-birds-nest-with-rock-sugar-70-gr-6-pcs/ps--BRE-22173-00040",
+                "itemSkus": ["BRE-22173-00040-00001"],
+                "merchantCode": "BRE-22173",
+                "campaign": {
+                  "active": true,
+                  "campaignCode": "CAMP-00783",
+                  "campaignName": "Flash Sale (1 - 10 November 2021)",
+                  "promotionEndTime": 1635785999000,
+                  "promotionStartTime": 1635699600000,
+                  "tagLabel": "https://www.static-src.com/siva/asset//07_2021/fs-logo-2021.png"
+                },
+                "inventory": {
+                  "status": "AVAILABLE",
+                  "percentage": 100
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 4.9,
+                  "count": 16
+                },
+                "tags": ["2HD"]
+              },
+              {
+                "name": "WINGSCARE Protector Masker 3ply 50s FREE Penyangga Masker",
+                "sku": "WIK-60037-00007",
+                "sequence": 11,
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//107/MTA-19638880/wingscare_wingscare_protector_masker_3ply_50s_free_penyangga_masker_full01_rqyavqs7.jpg",
+                "price": {
+                  "list": "Rp 80,000",
+                  "listValue": 80000,
+                  "offer": "Rp 39,000",
+                  "offerValue": 39000,
+                  "min": 39000,
+                  "max": 39000,
+                  "discount": 51
+                },
+                "buyable": {
+                  "value": true,
+                  "startDateTime": 1635267600000,
+                  "endDateTime": 1635353940000
+                },
+                "discoverable": {
+                  "value": true,
+                  "startDateTime": 1635267600000,
+                  "endDateTime": 1635353940000
+                },
+                "url": "https://www.blibli.com/p/wingscare-protector-masker-3ply-50s-free-penyangga-masker/ps--WIK-60037-00007",
+                "itemSkus": ["WIK-60037-00007-00001"],
+                "merchantCode": "WIK-60037",
+                "campaign": {
+                  "active": true,
+                  "campaignCode": "CAMP-00783",
+                  "campaignName": "Flash Sale (1 - 10 November 2021)",
+                  "promotionEndTime": 1635785999000,
+                  "promotionStartTime": 1635699600000,
+                  "tagLabel": "https://www.static-src.com/siva/asset//07_2021/fs-logo-2021.png"
+                },
+                "inventory": {
+                  "status": "AVAILABLE",
+                  "percentage": 100
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 4.8,
+                  "count": 140
+                },
+                "tags": ["2HD"]
+              },
+              {
+                "name": "Infinix Hot 10 S Smartphone [6 GB/ 128 GB/D]",
+                "sku": "CES-60092-00074",
+                "sequence": 12,
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//96/MTA-24029438/infinix_infinix_hot_10_s_smartphone_-6_gb-_128_gb-d-_full01_hdegxtyo.jpg",
+                "price": {
+                  "list": "Rp 2,149,000",
+                  "listValue": 2149000,
+                  "offer": "Rp 1,999,000",
+                  "offerValue": 1999000,
+                  "min": 1999000,
+                  "max": 1999000,
+                  "discount": 6
+                },
+                "buyable": {
+                  "value": true
+                },
+                "discoverable": {
+                  "value": true
+                },
+                "url": "https://www.blibli.com/p/infinix-hot-10-s-smartphone-6-gb-128-gb-d/ps--CES-60092-00074",
+                "itemSkus": ["CES-60092-00074-00001"],
+                "merchantCode": "CES-60092",
+                "campaign": {
+                  "active": true,
+                  "campaignCode": "CAMP-00783",
+                  "campaignName": "Flash Sale (1 - 10 November 2021)",
+                  "promotionEndTime": 1635785999000,
+                  "promotionStartTime": 1635699600000,
+                  "tagLabel": "https://www.static-src.com/siva/asset//07_2021/fs-logo-2021.png"
+                },
+                "inventory": {
+                  "status": "AVAILABLE",
+                  "percentage": 100
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 5,
+                  "count": 4
+                },
+                "tags": ["2HD"]
+              },
+              {
+                "name": "Sharp R-230R(S) Microwave [22L]",
+                "sku": "BLO-60051-00609",
+                "sequence": 13,
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//108/MTA-11778489/sharp_-internal-_sharp_r-230r-s-_microwave_-22l-_full01_pr9wokcj.jpg",
+                "price": {
+                  "list": "Rp 2,467,424",
+                  "listValue": 2467424,
+                  "offer": "Rp 953,610",
+                  "offerValue": 953610,
+                  "min": 953610,
+                  "max": 953610,
+                  "discount": 61
+                },
+                "buyable": {
+                  "value": true,
+                  "startDateTime": 1631167200000,
+                  "endDateTime": 1631206740000
+                },
+                "discoverable": {
+                  "value": true,
+                  "startDateTime": 1631167200000,
+                  "endDateTime": 1631206740000
+                },
+                "url": "https://www.blibli.com/p/sharp-r-230r-s-microwave-22l/ps--BLO-60051-00609",
+                "itemSkus": ["BLO-60051-00609-00001"],
+                "merchantCode": "BLO-60051",
+                "campaign": {
+                  "active": true,
+                  "campaignCode": "CAMP-00783",
+                  "campaignName": "Flash Sale (1 - 10 November 2021)",
+                  "promotionEndTime": 1635785999000,
+                  "promotionStartTime": 1635699600000,
+                  "tagLabel": "https://www.static-src.com/siva/asset//07_2021/fs-logo-2021.png"
+                },
+                "inventory": {
+                  "status": "AVAILABLE",
+                  "percentage": 100
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 5,
+                  "count": 23
+                },
+                "tags": ["2HD", "BLIBLI_SHIPPING"]
+              },
+              {
+                "name": "Logitech H111 Stereo Headset with Noise-Canceling Mic",
+                "sku": "LOO-60043-00015",
+                "sequence": 14,
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium/MTA-6211922/logitech_logitech_h111_stereo_headset_with_noise-canceling_mic_full05_d680e2qw.jpeg",
+                "price": {
+                  "list": "Rp 159,000",
+                  "listValue": 159000,
+                  "offer": "Rp 80,000",
+                  "offerValue": 80000,
+                  "min": 80000,
+                  "max": 80000,
+                  "discount": 49
+                },
+                "buyable": {
+                  "value": true,
+                  "startDateTime": 1634144400000,
+                  "endDateTime": 1634230740000
+                },
+                "discoverable": {
+                  "value": true,
+                  "startDateTime": 1634144400000,
+                  "endDateTime": 1634230740000
+                },
+                "url": "https://www.blibli.com/p/logitech-h111-stereo-headset-with-noise-canceling-mic/ps--LOO-60043-00015",
+                "itemSkus": ["LOO-60043-00015-00001"],
+                "merchantCode": "LOO-60043",
+                "campaign": {
+                  "active": true,
+                  "campaignCode": "CAMP-00783",
+                  "campaignName": "Flash Sale (1 - 10 November 2021)",
+                  "promotionEndTime": 1635785999000,
+                  "promotionStartTime": 1635699600000,
+                  "tagLabel": "https://www.static-src.com/siva/asset//07_2021/fs-logo-2021.png"
+                },
+                "inventory": {
+                  "status": "AVAILABLE",
+                  "percentage": 96
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 4.9,
+                  "count": 250
+                },
+                "tags": ["2HD", "BLIBLI_SHIPPING"]
+              },
+              {
+                "name": "LG 22MK600M-B Monitor 22-Inch Class Full HD IPS LED with Radeon FreeSync",
+                "sku": "BLK-15020-07425",
+                "sequence": 15,
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium/MTA-6838246/lg_lg-22mk600m-b-monitor-22-inch-class-full-hd-ips-led-with-radeon-freesync_full68.jpg",
+                "price": {
+                  "list": "Rp 2,299,000",
+                  "listValue": 2299000,
+                  "offer": "Rp 2,049,000",
+                  "offerValue": 2049000,
+                  "min": 2049000,
+                  "max": 2049000,
+                  "discount": 10
+                },
+                "buyable": {
+                  "value": true,
+                  "startDateTime": 1635354000000,
+                  "endDateTime": 1635440340000
+                },
+                "discoverable": {
+                  "value": true,
+                  "startDateTime": 1635354000000,
+                  "endDateTime": 1635440340000
+                },
+                "url": "https://www.blibli.com/p/lg-22mk600m-b-monitor-22-inch-class-full-hd-ips-led-with-radeon-freesync/ps--BLK-15020-07425",
+                "itemSkus": ["BLK-15020-07425-00001"],
+                "merchantCode": "BLK-15020",
+                "campaign": {
+                  "active": true,
+                  "campaignCode": "CAMP-00783",
+                  "campaignName": "Flash Sale (1 - 10 November 2021)",
+                  "promotionEndTime": 1635785999000,
+                  "promotionStartTime": 1635699600000,
+                  "tagLabel": "https://www.static-src.com/siva/asset//07_2021/fs-logo-2021.png"
+                },
+                "inventory": {
+                  "status": "AVAILABLE",
+                  "percentage": 100
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 5,
+                  "count": 39
+                },
+                "tags": ["2HD"]
+              },
+              {
+                "name": "NIKE Men Basketball Paul George 4 EP Sepatu Basket Pria [CD5082-200]",
+                "sku": "NIE-12227-07158",
+                "sequence": 16,
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//94/MTA-7542175/nike_nike_men_basketball_paul_george_4_ep_sepatu_basket_pria_-cd5082-200-_full02_f7w9rpl5.jpg",
+                "price": {
+                  "list": "Rp 1,649,000",
+                  "listValue": 1649000,
+                  "offer": "Rp 719,000 - Rp 909,000",
+                  "offerValue": 719000,
+                  "min": 719000,
+                  "max": 909000,
+                  "discount": 56
+                },
+                "buyable": {
+                  "value": true,
+                  "startDateTime": 1634050485083,
+                  "endDateTime": 1634057940000
+                },
+                "discoverable": {
+                  "value": true,
+                  "startDateTime": 1634050478772,
+                  "endDateTime": 1634057940000
+                },
+                "url": "https://www.blibli.com/p/nike-men-basketball-paul-george-4-ep-sepatu-basket-pria-cd5082-200/ps--NIE-12227-07158",
+                "itemSkus": [
+                  "NIE-12227-07158-00006",
+                  "NIE-12227-07158-00005",
+                  "NIE-12227-07158-00012",
+                  "NIE-12227-07158-00002",
+                  "NIE-12227-07158-00001",
+                  "NIE-12227-07158-00004",
+                  "NIE-12227-07158-00007",
+                  "NIE-12227-07158-00013",
+                  "NIE-12227-07158-00003",
+                  "NIE-12227-07158-00010"
+                ],
+                "merchantCode": "NIE-12227",
+                "campaign": {
+                  "active": true,
+                  "campaignCode": "CAMP-00783",
+                  "campaignName": "Flash Sale (1 - 10 November 2021)",
+                  "promotionEndTime": 1635785999000,
+                  "promotionStartTime": 1635699600000,
+                  "tagLabel": "https://www.static-src.com/siva/asset//07_2021/fs-logo-2021.png"
+                },
+                "inventory": {
+                  "status": "AVAILABLE",
+                  "percentage": 96
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 5,
+                  "count": 11
+                },
+                "tags": ["2HD"]
+              },
+              {
+                "name": "Nice Facial Tissue Soft Pack 180 Sheets 2 Ply [60 pcs/ Karton]",
+                "sku": "WAP-60045-00033",
+                "sequence": 17,
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium/MTA-7823052/nice_nice_facial_tissue_soft_pack_180_sheets_2_ply_-60_pcs-_karton-_full01_q2ax9pwb.jpeg",
+                "price": {
+                  "list": "Rp 390,000",
+                  "listValue": 390000,
+                  "offer": "Rp 289,700",
+                  "offerValue": 289700,
+                  "min": 289700,
+                  "max": 289700,
+                  "discount": 25
+                },
+                "buyable": {
+                  "value": true
+                },
+                "discoverable": {
+                  "value": true
+                },
+                "url": "https://www.blibli.com/p/nice-facial-tissue-soft-pack-180-sheets-2-ply-60-pcs-karton/ps--WAP-60045-00033",
+                "itemSkus": ["WAP-60045-00033-00001"],
+                "merchantCode": "WAP-60045",
+                "campaign": {
+                  "active": true,
+                  "campaignCode": "CAMP-00783",
+                  "campaignName": "Flash Sale (1 - 10 November 2021)",
+                  "promotionEndTime": 1635785999000,
+                  "promotionStartTime": 1635699600000,
+                  "tagLabel": "https://www.static-src.com/siva/asset//07_2021/fs-logo-2021.png"
+                },
+                "inventory": {
+                  "status": "AVAILABLE",
+                  "percentage": 91
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 4.9,
+                  "count": 923
+                },
+                "tags": ["2HD"]
+              },
+              {
+                "name": "Pediasure Vanila 850 g (1-10 tahun) Nutrisi Pertumbuhan Anak - Kids Formula - 3 kaleng",
+                "sku": "ABS-60107-00037",
+                "sequence": 18,
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//105/MTA-8505689/abbott_pediasure_vanila_850_g_-1-10_tahun-_nutrisi_pertumbuhan_anak_-_kids_formula_-_3_kaleng_full01_exqhwaxj.jpg",
+                "price": {
+                  "list": "Rp 942,800",
+                  "listValue": 942800,
+                  "offer": "Rp 780,000",
+                  "offerValue": 780000,
+                  "min": 780000,
+                  "max": 780000,
+                  "discount": 17
+                },
+                "buyable": {
+                  "value": true,
+                  "startDateTime": 1631456363349,
+                  "endDateTime": 1631456363366
+                },
+                "discoverable": {
+                  "value": true,
+                  "startDateTime": 1631456363318,
+                  "endDateTime": 1631456363332
+                },
+                "url": "https://www.blibli.com/p/pediasure-vanila-850-g-1-10-tahun-nutrisi-pertumbuhan-anak-kids-formula-3-kaleng/ps--ABS-60107-00037",
+                "itemSkus": ["ABS-60107-00037-00001"],
+                "merchantCode": "ABS-60107",
+                "campaign": {
+                  "active": true,
+                  "campaignCode": "CAMP-00783",
+                  "campaignName": "Flash Sale (1 - 10 November 2021)",
+                  "promotionEndTime": 1635785999000,
+                  "promotionStartTime": 1635699600000,
+                  "tagLabel": "https://www.static-src.com/siva/asset//07_2021/fs-logo-2021.png"
+                },
+                "inventory": {
+                  "status": "AVAILABLE",
+                  "percentage": 17
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 4.9,
+                  "count": 219
+                },
+                "tags": ["2HD"]
+              },
+              {
+                "name": "Samsung Galaxy Watch 3 - 45mm Smartwatch",
+                "sku": "ASS-60074-01384",
+                "sequence": 19,
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//92/MTA-21506833/samsung_samsung_galaxy_watch_3_-_45mm_smartwatch__full07_l87l78c.jpg",
+                "price": {
+                  "list": "Rp 4,399,000",
+                  "listValue": 4399000,
+                  "offer": "Rp 3,299,000 - Rp 3,799,000",
+                  "offerValue": 3299000,
+                  "min": 3299000,
+                  "max": 3799000,
+                  "discount": 25
+                },
+                "buyable": {
+                  "value": true
+                },
+                "discoverable": {
+                  "value": true
+                },
+                "url": "https://www.blibli.com/p/samsung-galaxy-watch-3-45mm-smartwatch/ps--ASS-60074-01384",
+                "itemSkus": ["ASS-60074-01384-00002", "ASS-60074-01384-00001"],
+                "merchantCode": "ASS-60074",
+                "campaign": {
+                  "active": true,
+                  "campaignCode": "CAMP-00783",
+                  "campaignName": "Flash Sale (1 - 10 November 2021)",
+                  "promotionEndTime": 1635785999000,
+                  "promotionStartTime": 1635699600000,
+                  "tagLabel": "https://www.static-src.com/siva/asset//07_2021/fs-logo-2021.png"
+                },
+                "inventory": {
+                  "status": "AVAILABLE",
+                  "percentage": 44
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 4.9,
+                  "count": 17
+                },
+                "tags": ["2HD"]
+              },
+              {
+                "name": "Lautan Mas Beras Wangi 5kg",
+                "sku": "TOL-60111-00124",
+                "sequence": 20,
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//95/MTA-21265547/lautan_mas_lautan_mas_beras_wangi_5kg_full01_mmfqosnl.jpg",
+                "price": {
+                  "list": "Rp 58,000",
+                  "listValue": 58000,
+                  "offer": "Rp 55,000",
+                  "offerValue": 55000,
+                  "min": 55000,
+                  "max": 55000,
+                  "discount": 5
+                },
+                "buyable": {
+                  "value": true,
+                  "startDateTime": 1632675600000,
+                  "endDateTime": 1632761940000
+                },
+                "discoverable": {
+                  "value": true,
+                  "startDateTime": 1632675600000,
+                  "endDateTime": 1632761940000
+                },
+                "url": "https://www.blibli.com/p/lautan-mas-beras-wangi-5kg/ps--TOL-60111-00124",
+                "itemSkus": ["TOL-60111-00124-00001"],
+                "merchantCode": "TOL-60111",
+                "campaign": {
+                  "active": true,
+                  "campaignCode": "CAMP-00783",
+                  "campaignName": "Flash Sale (1 - 10 November 2021)",
+                  "promotionEndTime": 1635785999000,
+                  "promotionStartTime": 1635699600000,
+                  "tagLabel": "https://www.static-src.com/siva/asset//07_2021/fs-logo-2021.png"
+                },
+                "inventory": {
+                  "status": "AVAILABLE",
+                  "percentage": 99
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 4.7,
+                  "count": 86
+                },
+                "tags": ["2HD"]
+              },
+              {
+                "name": "Promo S26 Procal Gold Tahap 3 Vanila Susu Pertumbuhan Anak [1600 g]",
+                "sku": "BAY-60035-00011",
+                "sequence": 21,
+                "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium/MTA-2969997/s26_s26-procal-gold-vanila--susu-pertumbuhan-anak--1600-g-_full03.jpg",
+                "price": {
+                  "list": "Rp 470,000",
+                  "listValue": 470000,
+                  "offer": "Rp 455,200",
+                  "offerValue": 455200,
+                  "min": 455200,
+                  "max": 455200,
+                  "discount": 3
+                },
+                "buyable": {
+                  "value": true
+                },
+                "discoverable": {
+                  "value": true
+                },
+                "url": "https://www.blibli.com/p/promo-s26-procal-gold-tahap-3-vanila-susu-pertumbuhan-anak-1600-g/ps--BAY-60035-00011",
+                "itemSkus": ["BAY-60035-00011-00001"],
+                "merchantCode": "BAY-60035",
+                "campaign": {
+                  "active": true,
+                  "campaignCode": "CAMP-00783",
+                  "campaignName": "Flash Sale (1 - 10 November 2021)",
+                  "promotionEndTime": 1635785999000,
+                  "promotionStartTime": 1635699600000,
+                  "tagLabel": "https://www.static-src.com/siva/asset//07_2021/fs-logo-2021.png"
+                },
+                "inventory": {
+                  "status": "AVAILABLE",
+                  "percentage": 100
+                },
+                "cnc": false,
+                "review": {
+                  "rating": 4.8,
+                  "count": 25
+                },
+                "tags": ["2HD"]
+              }
+            ],
+            "type": "PRODUCTSET",
+            "showProductTag": false
+          },
+          {
+            "id": "8ab016057cbd623c017ccac21e07041b",
+            "name": "flashSaleLink",
+            "newTab": false,
+            "type": "LINK",
+            "url": "https://www.blibli.com/flashsale?appsWebview=true"
+          }
+        ],
+        "componentLayoutId": "ff808181661019c70166384730660209",
+        "startDateTime": 1635699600000,
+        "endDateTime": 1635785940000
+      },
+      {
+        "name": "HOMEPAGE_2018_NOV_FLASHSALE_IMAGE",
+        "showInTnc": false,
+        "parameters": [
+          {
+            "id": "8ab0bf987a303b5c017a50c482a55cd2",
+            "image": "https://www.static-src.com/siva/asset//06_2021/fs-logo-jul-2021.png",
+            "imageRatio": "64:13",
+            "name": "icon",
+            "newTab": false,
+            "type": "IMAGE"
+          },
+          {
+            "id": "8ab0bf987a303b5c017a50c482a55cd1",
+            "image": "https://www.static-src.com/siva/asset//06_2021/fs-mobapp-background-jul.jpg",
+            "imageRatio": "15:13",
+            "name": "background",
+            "newTab": false,
+            "type": "IMAGE"
+          }
+        ],
+        "componentLayoutId": "ff808181661019c701664302b6e2046b"
+      }
+    ]
+  },
+  "paging": null,
+  "errors": null
+}
