@@ -1,6 +1,5 @@
 import 'package:fl_blibli/theme/theme.dart';
 import 'package:flutter/material.dart';
-import 'package:animated_text_kit/animated_text_kit.dart';
 
 class HeaderHome extends StatelessWidget {
   const HeaderHome({
@@ -97,7 +96,7 @@ class HeaderHome extends StatelessWidget {
                           borderRadius: BorderRadius.circular(12),
                         ),
                         padding: const EdgeInsets.only(left: 12),
-                        child: Align(
+                        child: const Align(
                             alignment: Alignment.centerLeft,
                             child: Text(
                               'RTX 3070',
@@ -106,7 +105,7 @@ class HeaderHome extends StatelessWidget {
                                 fontWeight: FontWeight.w600,
                               ),
                             )
-                            // AnimatedTextKit(
+                            //     AnimatedTextKit(
                             //   repeatForever: true,
                             //   animatedTexts: [
                             //     FadeAnimatedText(

@@ -5,10 +5,8 @@ class OfficalScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text('Up comming'),
-      ),
+    return const Center(
+      child: Text('Up comming'),
     );
   }
 }

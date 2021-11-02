@@ -8,9 +8,6 @@ final List<String> imgList = [
   'assets/images/mastercard-30okt-desktop.jpeg',
   'assets/images/chromebook-30okt-destop.jpeg',
   'assets/images/IS-sepeda-30okt-desktop.jpeg',
-  'assets/images/IS-sepeda-30okt-desktop.jpeg',
-  'assets/images/IS-sepeda-30okt-desktop.jpeg',
-  'assets/images/IS-sepeda-30okt-desktop.jpeg',
 ];
 
 class CarouselHome extends StatefulWidget {
@@ -35,7 +32,7 @@ class _CarouselHomeState extends State<CarouselHome> {
           CarouselSlider(
             carouselController: _controller,
             options: CarouselOptions(
-                autoPlay: false,
+                autoPlay: true,
                 height: 140,
                 viewportFraction: 0.9,
                 onPageChanged: (index, reason) {

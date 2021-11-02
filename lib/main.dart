@@ -1,6 +1,7 @@
 import 'package:fl_blibli/screens/account_screen.dart';
 import 'package:fl_blibli/screens/category_screen.dart';
 import 'package:fl_blibli/screens/home_screen.dart';
+import 'package:fl_blibli/screens/login_screen.dart';
 import 'package:fl_blibli/screens/offical_screen.dart';
 import 'package:fl_blibli/widgets/icons/icon_orange_center.dart';
 import 'package:flutter/material.dart';
@@ -16,8 +17,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      // debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      debugShowCheckedModeBanner: false,
+      // home: HomePage(),
+      home: LoginScreen(),
     );
   }
 }
