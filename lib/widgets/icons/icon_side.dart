@@ -58,6 +58,7 @@ class IconSide extends StatelessWidget {
                   fontFamily: "Effra",
                   fontWeight: FontWeight.w600,
                   color: Colors.black,
+                  fontSize: 12,
                 ),
               ),
             ],

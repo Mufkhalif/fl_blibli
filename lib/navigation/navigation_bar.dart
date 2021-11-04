@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:fl_blibli/canvas/bottom_canvas.dart';
 import 'package:fl_blibli/navigation/nav_item.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +25,10 @@ class NavigationBar extends StatelessWidget {
           CustomPaint(
             size: Size(
               double.infinity,
-              (440 * 0.1502086230876217).toDouble(),
+              (Platform.isAndroid
+                      ? (340 * 0.1502086230876217)
+                      : (440 * 0.1502086230876217))
+                  .toDouble(),
             ),
             painter: CustomePointerBottomNavigation(),
           ),

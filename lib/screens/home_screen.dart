@@ -48,6 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Stack(
       children: [
         ListView(
+          physics: ClampingScrollPhysics(),
           controller: con,
           scrollDirection: Axis.vertical,
           children: [
@@ -151,6 +152,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   FlashSaleSection(),
                   PromoSection(),
                   OfficialSection(size: size),
+                  SizedBox(height: 200)
                 ],
               ),
             )

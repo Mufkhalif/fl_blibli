@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:fl_blibli/theme/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -96,46 +97,50 @@ class HeaderHome extends StatelessWidget {
                           borderRadius: BorderRadius.circular(12),
                         ),
                         padding: const EdgeInsets.only(left: 12),
-                        child: const Align(
-                            alignment: Alignment.centerLeft,
-                            child: Text(
-                              'RTX 3070',
-                              style: TextStyle(
-                                fontFamily: "Effra",
-                                fontWeight: FontWeight.w600,
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child:
+
+                              //  Text(
+                              //   'RTX 3070',
+                              //   style: TextStyle(
+                              //     fontFamily: "Effra",
+                              //     fontWeight: FontWeight.w600,
+                              //   ),
+                              // )
+                              AnimatedTextKit(
+                            repeatForever: true,
+                            animatedTexts: [
+                              FadeAnimatedText(
+                                'Popok bayi',
+                                textStyle: const TextStyle(
+                                  fontFamily: "Effra",
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.black,
+                                ),
                               ),
-                            )
-                            //     AnimatedTextKit(
-                            //   repeatForever: true,
-                            //   animatedTexts: [
-                            //     FadeAnimatedText(
-                            //       'Popok bayi',
-                            //       textStyle: const TextStyle(
-                            //         fontFamily: "Effra",
-                            //         fontWeight: FontWeight.w600,
-                            //         color: Colors.black,
-                            //       ),
-                            //     ),
-                            //     FadeAnimatedText(
-                            //       'Iphone 13 pro',
-                            //       textStyle: const TextStyle(
-                            //         fontFamily: "Effra",
-                            //         fontWeight: FontWeight.w600,
-                            //         color: Colors.black,
-                            //       ),
-                            //     ),
-                            //   ],
-                            // ),
-                            ),
+                              FadeAnimatedText(
+                                'Iphone 13 pro',
+                                textStyle: const TextStyle(
+                                  fontFamily: "Effra",
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.black,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
                       ),
                     ),
                     Row(
                       children: [
+                        const SizedBox(width: 4),
                         Icon(
-                          Icons.chevron_right,
+                          Icons.login,
                           color: primary,
-                          size: 24,
+                          size: 18,
                         ),
+                        const SizedBox(width: 4),
                         Text(
                           'Masuk',
                           style: TextStyle(

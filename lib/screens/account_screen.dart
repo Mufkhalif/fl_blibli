@@ -63,19 +63,19 @@ class AccountScreen extends StatelessWidget {
                     width: 12,
                   ),
                   Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Mufkhalif',
-                        style: const TextStyle(
-                          fontFamily: "Effra",
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18,
-                          color: Colors.white,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Mufkhalif',
+                          style: const TextStyle(
+                            fontFamily: "Effra",
+                            fontWeight: FontWeight.w600,
+                            fontSize: 18,
+                            color: Colors.white,
+                          ),
                         ),
-                      ),
-                      SizedBox(height: 4),
-                      Text(
+                        SizedBox(height: 4),
+                        Text(
                         'Classic Member',
                         style: const TextStyle(
                           fontFamily: "Effra",
