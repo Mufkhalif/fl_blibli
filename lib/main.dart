@@ -1,5 +1,6 @@
 import 'package:authentication_repository/authentication_repository.dart';
 import 'package:fl_blibli/blocs/authentication/blocs/authentication_bloc.dart';
+import 'package:fl_blibli/models/hive/user.dart';
 import 'package:fl_blibli/screens/account_screen.dart';
 import 'package:fl_blibli/screens/category_screen.dart';
 import 'package:fl_blibli/screens/home_screen.dart';
@@ -9,10 +10,19 @@ import 'package:fl_blibli/screens/splash_screen.dart';
 import 'package:fl_blibli/widgets/icons/icon_orange_center.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hive/hive.dart';
 import 'package:user_repository/user_repository.dart';
 import 'navigation/navigation_bar.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
-void main() {
+void main() async {
+  // Initialize hive
+  await Hive.initFlutter();
+  // Registering the adapter
+  Hive.registerAdapter(UserAdapter());
+  // Opening the box
+  await Hive.openBox('userBox');
+
   runApp(App(
     authenticationRepository: AuthenticationRepository(),
     userRepository: UserRepository(),
