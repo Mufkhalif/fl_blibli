@@ -103,10 +103,6 @@ class _HomeScreenState extends State<HomeScreen> {
                           url: 'assets/images/ic_promo.png',
                           title: 'Promo Bank',
                         ),
-                        IconRow(
-                          url: 'assets/images/ic_promo.png',
-                          title: 'Promo Bank',
-                        ),
                       ],
                     ),
                   ),

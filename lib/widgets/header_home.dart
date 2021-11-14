@@ -1,6 +1,9 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:authentication_repository/authentication_repository.dart';
+import 'package:fl_blibli/blocs/authentication/blocs/authentication_bloc.dart';
 import 'package:fl_blibli/theme/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HeaderHome extends StatelessWidget {
   const HeaderHome({
@@ -26,39 +29,44 @@ class HeaderHome extends StatelessWidget {
             decoration: BoxDecoration(color: primary),
             width: double.infinity,
             child: !isHideLocation
-                ? Row(
-                    children: [
-                      const Icon(
-                        Icons.location_on,
-                        color: Colors.white,
-                        size: 18,
-                      ),
-                      const SizedBox(width: 4),
-                      const Text(
-                        'Tambah alamat',
-                        style: TextStyle(
-                          fontFamily: "Effra",
-                          fontWeight: FontWeight.w600,
+                ? BlocBuilder<AuthenticationBloc, AuthenticationState>(
+                    builder: (context, state) {
+                    return Row(
+                      children: [
+                        const Icon(
+                          Icons.location_on,
                           color: Colors.white,
+                          size: 18,
                         ),
-                      ),
-                      const SizedBox(width: 4),
-                      Text(
-                        'biar belanja lebih asyik',
-                        style: TextStyle(
-                          fontFamily: "Effra",
-                          fontWeight: FontWeight.w600,
-                          color: Colors.white.withOpacity(0.6),
+                        const SizedBox(width: 4),
+                        Text(
+                          state.status == AuthenticationStatus.authenticated
+                              ? state.user.username
+                              : "Tambah Alamat",
+                          style: const TextStyle(
+                            fontFamily: "Effra",
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white,
+                          ),
                         ),
-                      ),
-                      const SizedBox(width: 4),
-                      const Icon(
-                        Icons.chevron_right,
-                        color: Colors.white,
-                        size: 18,
-                      ),
-                    ],
-                  )
+                        const SizedBox(width: 4),
+                        Text(
+                          'biar belanja lebih asyik',
+                          style: TextStyle(
+                            fontFamily: "Effra",
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white.withOpacity(0.6),
+                          ),
+                        ),
+                        const SizedBox(width: 4),
+                        const Icon(
+                          Icons.chevron_right,
+                          color: Colors.white,
+                          size: 18,
+                        ),
+                      ],
+                    );
+                  })
                 : Container(height: 20),
           ),
           Align(
@@ -99,16 +107,7 @@ class HeaderHome extends StatelessWidget {
                         padding: const EdgeInsets.only(left: 12),
                         child: Align(
                           alignment: Alignment.centerLeft,
-                          child:
-
-                              //  Text(
-                              //   'RTX 3070',
-                              //   style: TextStyle(
-                              //     fontFamily: "Effra",
-                              //     fontWeight: FontWeight.w600,
-                              //   ),
-                              // )
-                              AnimatedTextKit(
+                          child: AnimatedTextKit(
                             repeatForever: true,
                             animatedTexts: [
                               FadeAnimatedText(
@@ -132,25 +131,39 @@ class HeaderHome extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Row(
-                      children: [
-                        const SizedBox(width: 4),
-                        Icon(
-                          Icons.login,
-                          color: primary,
-                          size: 18,
+                    BlocBuilder<AuthenticationBloc, AuthenticationState>(
+                        builder: (context, state) {
+                      return GestureDetector(
+                        onTap: () {
+                          state.status == AuthenticationStatus.authenticated
+                              ? context
+                                  .read<AuthenticationBloc>()
+                                  .add(AuthenticationLogoutRequested())
+                              : null;
+                        },
+                        child: Row(
+                          children: [
+                            const SizedBox(width: 4),
+                            Icon(
+                              Icons.login,
+                              color: primary,
+                              size: 18,
+                            ),
+                            const SizedBox(width: 4),
+                            Text(
+                              state.status == AuthenticationStatus.authenticated
+                                  ? 'Keluar'
+                                  : 'Masuk',
+                              style: TextStyle(
+                                fontFamily: "Effra",
+                                fontWeight: FontWeight.w600,
+                                color: primary,
+                              ),
+                            )
+                          ],
                         ),
-                        const SizedBox(width: 4),
-                        Text(
-                          'Masuk',
-                          style: TextStyle(
-                            fontFamily: "Effra",
-                            fontWeight: FontWeight.w600,
-                            color: primary,
-                          ),
-                        )
-                      ],
-                    )
+                      );
+                    })
                   ],
                 ),
               ),

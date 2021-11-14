@@ -3,6 +3,7 @@ import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:fl_blibli/screens/login/models/models.dart';
 import 'package:formz/formz.dart';
+import 'package:user_repository/user_repository.dart';
 
 part 'login_event.dart';
 part 'login_state.dart';
@@ -10,7 +11,9 @@ part 'login_state.dart';
 class LoginBloc extends Bloc<LoginEvent, LoginState> {
   LoginBloc({
     required AuthenticationRepository authenticationRepository,
+    required UserRepository userRepository,
   })  : _authenticationRepository = authenticationRepository,
+        _userRepository = userRepository,
         super(const LoginState()) {
     on<LoginUsernameChanged>(_onUsernameChanged);
     on<LoginPasswordChanged>(_onPasswordChanged);
@@ -18,6 +21,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
   }
 
   final AuthenticationRepository _authenticationRepository;
+  final UserRepository _userRepository;
 
   void _onUsernameChanged(
     LoginUsernameChanged event,
@@ -52,6 +56,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
           username: state.username.value,
           password: state.password.value,
         );
+        await _userRepository.getUser();
       } catch (_) {
         emit(state.copyWith(status: FormzStatus.submissionFailure));
       }

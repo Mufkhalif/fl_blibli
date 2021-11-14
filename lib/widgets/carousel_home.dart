@@ -33,7 +33,7 @@ class _CarouselHomeState extends State<CarouselHome> {
             carouselController: _controller,
             options: CarouselOptions(
                 autoPlay: true,
-                height: 140,
+                height: 160,
                 viewportFraction: 0.9,
                 onPageChanged: (index, reason) {
                   setState(() {

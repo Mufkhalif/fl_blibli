@@ -3,10 +3,12 @@
 import 'package:authentication_repository/authentication_repository.dart';
 import 'package:fl_blibli/screens/login/bloc/login_bloc.dart';
 import 'package:fl_blibli/theme/theme.dart';
+import 'package:fl_blibli/widgets/button/button_otherlogin.dart';
+import 'package:fl_blibli/widgets/textfield/text_input.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:formz/formz.dart';
+import 'package:user_repository/user_repository.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -24,6 +26,7 @@ class LoginPage extends StatelessWidget {
           return LoginBloc(
             authenticationRepository:
                 RepositoryProvider.of<AuthenticationRepository>(context),
+            userRepository: UserRepository(),
           );
         },
         child: LoginScreen(),
@@ -47,6 +50,37 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
+
+    var _blocBuilder = BlocBuilder<LoginBloc, LoginState>(
+      buildWhen: (previous, current) => previous.status != current.status,
+      builder: (context, state) {
+        return InkWell(
+          onTap: state.status.isValidated
+              ? () => context.read<LoginBloc>().add(LoginSubmitted())
+              : null,
+          child: Container(
+            padding: EdgeInsets.symmetric(
+              horizontal: 24.0,
+              vertical: 16.0,
+            ),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(18),
+              color: state.status.isValidated ? primary : inputPlaceholderColor,
+            ),
+            child: Text(
+              'Masuk',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontFamily: "Effra",
+                fontWeight: FontWeight.w600,
+                color: state.status.isValidated ? Colors.white : Colors.grey,
+                fontSize: 16,
+              ),
+            ),
+          ),
+        );
+      },
+    );
 
     return BlocListener<LoginBloc, LoginState>(
       listener: (context, state) {
@@ -163,45 +197,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           );
                         },
                       ),
-                      BlocBuilder<LoginBloc, LoginState>(
-                        buildWhen: (previous, current) =>
-                            previous.status != current.status,
-                        builder: (context, state) {
-                          return InkWell(
-                            onTap: state.status.isValidated
-                                ? () {
-                                    context.read<LoginBloc>().add(
-                                          LoginSubmitted(),
-                                        );
-                                  }
-                                : null,
-                            child: Container(
-                              padding: EdgeInsets.symmetric(
-                                horizontal: 24.0,
-                                vertical: 16.0,
-                              ),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(18),
-                                color: state.status.isValidated
-                                    ? primary
-                                    : inputPlaceholderColor,
-                              ),
-                              child: Text(
-                                'Masuk',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontFamily: "Effra",
-                                  fontWeight: FontWeight.w600,
-                                  color: state.status.isValidated
-                                      ? Colors.white
-                                      : Colors.grey,
-                                  fontSize: 16,
-                                ),
-                              ),
-                            ),
-                          );
-                        },
-                      ),
+                      _blocBuilder,
                       SizedBox(
                         height: 12,
                       ),
@@ -281,147 +277,6 @@ class _LoginScreenState extends State<LoginScreen> {
                 )
               ],
             ),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class TextInput extends StatefulWidget {
-  const TextInput({
-    Key? key,
-    required this.placeholder,
-    required this.isPassword,
-    required this.onChanged,
-    this.errorText,
-  }) : super(key: key);
-
-  final String placeholder;
-  final bool isPassword;
-  final Function(String) onChanged;
-  final String? errorText;
-
-  @override
-  State<TextInput> createState() => _TextInputState();
-}
-
-class _TextInputState extends State<TextInput> {
-  Color _bgColor = inputPlaceholderColor;
-
-  bool _passwordVisible = false;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.only(bottom: 12),
-      child: Focus(
-        onFocusChange: (hasFocus) {
-          setState(
-              () => _bgColor = hasFocus ? Colors.white : inputPlaceholderColor);
-        },
-        child: TextFormField(
-          onChanged: (value) => widget.onChanged(value),
-          obscureText: widget.isPassword && _passwordVisible ? true : false,
-          decoration: InputDecoration(
-            errorText: widget.errorText,
-            suffixIcon: widget.isPassword
-                ? IconButton(
-                    icon: Icon(
-                      _passwordVisible
-                          ? Icons.visibility
-                          : Icons.visibility_off,
-                      color: Colors.grey,
-                    ),
-                    onPressed: () {
-                      setState(() {
-                        _passwordVisible = !_passwordVisible;
-                      });
-                    },
-                  )
-                : null,
-            // filled: true,
-            fillColor: _bgColor,
-            hoverColor: Colors.red,
-            focusColor: Colors.white,
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.all(
-                Radius.circular(16),
-              ),
-            ),
-            labelText: widget.placeholder,
-            hintStyle: TextStyle(
-              fontFamily: "Effra",
-              fontWeight: FontWeight.w600,
-              fontSize: 18,
-            ),
-            enabledBorder: OutlineInputBorder(
-              borderSide: BorderSide(
-                width: 1,
-                color: inputPlaceholderColor,
-              ),
-              borderRadius: BorderRadius.circular(18),
-            ),
-            focusedBorder: OutlineInputBorder(
-              borderSide: BorderSide(
-                width: 1,
-                color: primary,
-              ),
-              borderRadius: BorderRadius.circular(18),
-            ),
-          ),
-          style: TextStyle(
-            fontFamily: "Effra",
-            fontWeight: FontWeight.w600,
-            color: Colors.black,
-            fontSize: 16,
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class ButtonOtherLogin extends StatelessWidget {
-  const ButtonOtherLogin({
-    Key? key,
-    required this.isGoogle,
-  }) : super(key: key);
-
-  final bool isGoogle;
-
-  @override
-  Widget build(BuildContext context) {
-    return Expanded(
-      flex: 1,
-      child: InkWell(
-        onTap: () {},
-        child: Container(
-          padding: EdgeInsets.symmetric(
-            horizontal: 24.0,
-            vertical: 16.0,
-          ),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(18),
-            color: isGoogle ? googleColor : fbColor,
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SvgPicture.asset(isGoogle
-                  ? 'assets/images/ic_google.svg'
-                  : 'assets/images/ic_facebook.svg'),
-              SizedBox(width: 8),
-              Text(
-                isGoogle ? 'Google' : 'Facebook',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontFamily: "Effra",
-                  fontWeight: FontWeight.w600,
-                  color: isGoogle ? Colors.grey : Colors.white,
-                ),
-              )
-            ],
           ),
         ),
       ),
